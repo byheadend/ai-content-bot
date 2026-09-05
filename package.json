@@ -1,0 +1,30 @@
+{
+  "name": "ai-content-bot",
+  "version": "1.0.0",
+  "description": "AI-powered product description generator Telegram bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src/",
+    "clean": "rimraf dist"
+  },
+  "author": "Serkan Tastan",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "grammy": "^1.21.1",
+    "openai": "^4.47.1",
+    "better-sqlite3": "^11.1.2",
+    "csv-parse": "^5.5.6",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.10",
+    "@types/node": "^20.12.12",
+    "rimraf": "^5.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
